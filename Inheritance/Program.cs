@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO.IsolatedStorage;
 
 namespace Inheritance
 {
@@ -29,11 +30,30 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            var myBird = new Bird();
+            myBird.WingColor = "red";
+            myBird.CanFly = true;
+            myBird.DoMigrate = true;
+            myBird.BeakLength = 4;
+
+
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Bird class
              *  
              * Creatively display the class member values 
              */
+
+            var myReptile = new Reptile()
+            {
+                IsColdBlooded = true,
+                IsScaly = true,
+                Habitat = "Desert",
+                CanGrowTail = true 
+               
+            };
+            
+
         }
     }
 }
